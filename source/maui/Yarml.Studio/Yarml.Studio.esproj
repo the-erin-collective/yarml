@@ -1,11 +1,12 @@
 <Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.128-alpha">
   <PropertyGroup>
-    <StartupCommand>npm start</StartupCommand>
+    <StartupCommand>ng build</StartupCommand>
     <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
     <!-- Allows the build (or compile) script located on package.json to run on Build -->
-    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <ShouldRunBuildScript>true</ShouldRunBuildScript>
     <!-- Folder where production build objects will be placed -->
-    <PublishAssetsDirectory>$(MSBuildProjectDirectory)\dist\Yarml.Studio\</PublishAssetsDirectory>
+    <PublishAssetsDirectory>$(MSBuildProjectDirectory)\..\Yarml.Ui\wwwroot\studio</PublishAssetsDirectory>
+    <BuildCommand>ng build</BuildCommand>
   </PropertyGroup>
   <ItemGroup>
     <None Include=".vscode\extensions.json" />
