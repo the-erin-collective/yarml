@@ -86,11 +86,18 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Lib\" />
       <Folder Include="wwwroot\studio\" />
     </ItemGroup>
 
     <ItemGroup>
       <None Include="nuget.config" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.JSInterop">
+        <HintPath>Lib\Microsoft.JSInterop\Microsoft.JSInterop.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
